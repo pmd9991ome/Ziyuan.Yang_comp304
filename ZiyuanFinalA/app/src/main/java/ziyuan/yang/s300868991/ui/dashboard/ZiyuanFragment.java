@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -20,7 +21,7 @@ public class ZiyuanFragment extends Fragment {
     private ZiyuanViewModel ziyuanViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+                             ViewGroup container, final Bundle savedInstanceState) {
         ziyuanViewModel =
                 ViewModelProviders.of(this).get(ZiyuanViewModel.class);
         final View root = inflater.inflate(R.layout.ziyuan_fragment, container, false);
@@ -31,6 +32,7 @@ public class ZiyuanFragment extends Fragment {
                 textView.setText(s);
 
                 Button button1=root.findViewById(R.id.ziy_button1);
+
 
 
             }

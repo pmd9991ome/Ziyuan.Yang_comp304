@@ -14,6 +14,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import ziyuan.yang.s300868991.ui.dashboard.ZiyuanFragment;
 import ziyuan.yang.s300868991.ui.notifications.ZiyuanCallFragment;
 
 public class ZiyuanActivity extends AppCompatActivity {
@@ -48,7 +49,11 @@ public class ZiyuanActivity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.ziy_option1:
-                startActivity(new Intent(ZiyuanActivity.this, ZiyuanCallFragment.class));
+                ZiyuanFragment nextFrag= new ZiyuanFragment();
+               new ZiyuanActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, nextFrag, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
