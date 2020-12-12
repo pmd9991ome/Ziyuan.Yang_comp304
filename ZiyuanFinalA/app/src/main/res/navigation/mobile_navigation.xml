@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/ziy_navigation_dashboard">
+
+    <fragment
+        android:id="@+id/ziy_navigation_home"
+        android:name="ziyuan.yang.s300868991.ui.home.YangFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/yang_fragment" />
+
+    <fragment
+        android:id="@+id/ziy_navigation_dashboard"
+        android:name="ziyuan.yang.s300868991.ui.dashboard.ZiyuanFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/ziyuan_fragment" />
+
+    <fragment
+        android:id="@+id/ziy_navigation_notifications"
+        android:name="ziyuan.yang.s300868991.ui.notifications.ZiyuanCallFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/ziyuan_callfragment" />
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/ziy_option1"
+    android:title="phone"
+    app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_call_24"/>
+    <item android:id="@+id/ziy_option2"
+        android:title="dialog"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_message_24"/>
+    <item android:id="@+id/ziy_option3"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="main"
+        app:showAsAction="always"/>
+</menu>
